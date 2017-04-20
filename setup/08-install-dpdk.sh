@@ -1,7 +1,6 @@
 #!/bin/bash
 
 DPDK_VER=$1
-RTE_TARGET=$2
 
 path="$(pwd)"
 #source $path/env.sh
