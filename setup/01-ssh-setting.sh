@@ -10,7 +10,7 @@ sudo sed -i -e 's/GSSAPIAuthentication\ yes/GSSAPIAuthentication\ no/g' /etc/ssh
 # Allow sudo from ssh
 echo 'Defaults !requiretty' >/etc/sudoers.d/ssh-sudo-without-tty
 # Restart ssh service
-sudo service sshd restart
+#sudo service sshd restart
 # Remove the old ssh key if it exists to avoid failure when running genkey script
 #rm -rf /root/.ssh/id*
 # Automatically generate ssh key (3 times Enter)

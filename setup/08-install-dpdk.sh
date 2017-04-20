@@ -13,7 +13,7 @@ IP=${ipaddr[0]}
 mkdir -p /opt/crucio
 cd /opt/crucio
 rm -rf dpdk*
-wget http://www.dpdk.org/browse/dpdk/snapshot/dpdk-$ .tar.gz
+wget http://www.dpdk.org/browse/dpdk/snapshot/dpdk-$DPDK_VER.tar.gz
 tar -zxf dpdk-$DPDK_VER.tar.gz
 ln -snf dpdk-$DPDK_VER dpdk
 
@@ -37,7 +37,7 @@ CONFIG_RTE_ARCH_X86_64=y
 EOF
 
 	cd /opt/crucio/dpdk
-	patch -p1 < /opt/patch-files/dats-patchs/common-patchs/patch/dpdk/vhost-ignore-cleared-virtqueue.patch
+	patch -p1 < /opt/patch-files/common-patchs/patch/dpdk/vhost-ignore-cleared-virtqueue.patch
 else
 	echo "This is tester, do nothing"
 fi

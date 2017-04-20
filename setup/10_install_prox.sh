@@ -19,7 +19,7 @@ git checkout $PROX_VER
 
 if [ $PROX_VER = 85806f9431cc2d70ad5a82d3d07eff78af3486ea ]
 then
-	patch -p1 < /opt/patch-files/dats-patchs/common-patchs/patch/prox/more-rxtx-desc-and-larger-mbuf-cache.patch
+	patch -p1 < /opt/patch-files/common-patchs/patch/prox/more-rxtx-desc-and-larger-mbuf-cache.patch
 fi
 
 # Building PROX
