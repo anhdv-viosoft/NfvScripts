@@ -13,7 +13,7 @@ IP=${ipaddr[0]}
 mkdir -p /opt/crucio
 cd /opt/crucio
 rm -rf dpdk*
-wget http://www.dpdk.org/browse/dpdk/snapshot/dpdk-$ .tar.gz
+wget http://www.dpdk.org/browse/dpdk/snapshot/dpdk-$DPDK_VER.tar.gz
 tar -zxf dpdk-$DPDK_VER.tar.gz
 ln -snf dpdk-$DPDK_VER dpdk
 
