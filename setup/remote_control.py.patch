@@ -1,0 +1,11 @@
+--- remote_control.py   2017-05-11 05:08:10.514566989 -0400
++++ remote_control.py.bk        2017-05-11 05:08:07.363567099 -0400
+@@ -164,7 +164,7 @@
+         prox_cmd = "export TERM=xterm; export RTE_SDK=" + self._dpdk_dir + "; " \
+             + "export RTE_TARGET=" + self._dpdk_target + ";" \
+             + " cd " + self._prox_dir + "; make HW_DIRECT_STATS=y -j50; sudo " \
+-            + "./build/prox " + prox_args
++            + "screen -S validium ./build/prox " + prox_args
+         self._err = False
+         logging.debug("Starting PROX with command [%s]", prox_cmd)
+         thread.start_new_thread(ssh_check_quit, (self, self._user, self._ip, prox_cmd))
