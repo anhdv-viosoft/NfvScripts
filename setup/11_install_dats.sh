@@ -14,7 +14,8 @@ if [ $DATS_VER = f1da5139b2c1a9134abfb6f304c980cd445c9a38 ]
 then
 	cd ../
 	patch -d DATS/tests/ -p1 < /root/pre-config/dats-patchs/common-patchs/patch/dats/adjust-mempool-for-more-rxtx-desc.patch
-	cd /opt/crucio/DATS/dats && patch < remote_control.py.patch && cd -
+	patch -f DATS/dats/remote_control.py < remote_control.py.patch
+	
 	# Gettign new patchs for DATS
 	cd DATS/
 	mv tests/prox-configs/ tests/prox-configs.old/
