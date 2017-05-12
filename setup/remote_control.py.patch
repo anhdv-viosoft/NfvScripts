@@ -13,7 +13,7 @@
              + "export RTE_TARGET=" + self._dpdk_target + ";" \
              + " cd " + self._prox_dir + "; make HW_DIRECT_STATS=y -j50; sudo " \
 -            + "./build/prox " + prox_args
-+            + "sudo pkill -9 screen && screen -S validium ./build/prox " + prox_args
++            + "pkill -9 screen && screen -S validium sudo ./build/prox " + prox_args
          self._err = False
          logging.debug("Starting PROX with command [%s]", prox_cmd)
          thread.start_new_thread(ssh_check_quit, (self, self._user, self._ip, prox_cmd))
