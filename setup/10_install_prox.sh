@@ -24,4 +24,4 @@ fi
 
 # Building PROX
 export RTE_SDK=/opt/crucio/dpdk
-make
+make install
