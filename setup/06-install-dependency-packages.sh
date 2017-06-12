@@ -33,4 +33,5 @@ if [ "$APT_GET_CMD" != "" ]; then
   # Update PIP packages
   pip install --upgrade pip
   pip install --upgrade setuptools
+  pip install BeautifulSoup4
 fi
