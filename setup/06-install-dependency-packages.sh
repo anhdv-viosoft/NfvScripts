@@ -6,7 +6,7 @@ if [ "$APT_GET_CMD" != "" ]; then
   export DEBIAN_FRONTEND=noninteractive
   apt-get update
   sudo apt-get -y install yum-utils wget vim tcpdump screen expect
-  sudo apt-get -y install sed gawk grep wget tar gzip bzip2 unzip coreutils pciutils psmisc
+  sudo apt-get -y install sed gawk grep wget tar gzip bzip2 zip unzip coreutils pciutils psmisc
   sudo apt-get -y install gcc make git autoconf automake libtool python perl patch
   sudo apt-get -y install net-tools
   sudo apt-get -y install grub-common
