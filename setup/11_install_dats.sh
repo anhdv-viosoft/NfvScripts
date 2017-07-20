@@ -15,7 +15,7 @@ patch -f dats/remote_control.py < /opt/nfvscripts/setup/remote_control.py.patch
 if [ $DATS_VER = f1da5139b2c1a9134abfb6f304c980cd445c9a38 ]
 then
 	cd ../
-	patch -d DATS/tests/ -p1 < /root/patch-files/common-patchs/patch/dats/adjust-mempool-for-more-rxtx-desc.patch
+	patch -d DATS/tests/ -p1 < /opt/patch-files/common-patchs/patch/dats/adjust-mempool-for-more-rxtx-desc.patch
 
 	# Gettign new patchs for DATS
 	cd DATS/
