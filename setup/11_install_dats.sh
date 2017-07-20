@@ -22,7 +22,9 @@ then
 	mv tests/prox-configs/ tests/prox-configs.old/
 	rm -rf dats-patchs/
 	git clone https://github.com/toandd-viosoft/dats-patchs.git
+	cd dats-patchs
 	git checkout 06a31252adac6a3e4d47e9743de6f941dc97376c
+	cd ..
 	cp -r dats-patchs/baremetal-patchs/prox-configs/ tests/
 	chmod +x dats.py
 fi
